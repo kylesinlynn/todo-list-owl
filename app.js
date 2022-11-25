@@ -11,7 +11,7 @@ class TaskList {
     nextId = 1;
     tasks = [];
 
-    addTest(text) {
+    addTask(text) {
         text = text.trim();
         if (text) {
             const task = {
