@@ -1,52 +1,67 @@
-.task-list {
-    width: 300px;
-    margin: 50px auto;
-    background: aliceblue;
-    padding: 10px;
-}
-  
-.task {
-    font-size: 18px;
-    color: #111111;
-}
-
-.task.done {
-    opacity: 0.7;
-}
-
 .todo-app {
     width: 300px;
     margin: 50px auto;
     background: aliceblue;
     padding: 10px;
-}
-
-.todo-app > input {
+  }
+  
+  .todo-app > input {
     display: block;
     margin: auto;
-}
+  }
   
-.task-list {
+  .task-list {
     margin-top: 8px;
-}
-
-.task {
+  }
+  
+  .task {
     font-size: 18px;
     color: #111111;
     display: grid;
     grid-template-columns: 30px auto 30px;
-}
+  }
   
-.task > input {
+  .task:hover {
+    background-color: #def0ff;
+  }
+  
+  .task > input {
     margin: auto;
-}
+  }
   
-.delete {
+  .delete {
     opacity: 0;
     cursor: pointer;
     text-align: center;
-}
+  }
   
-.task:hover .delete {
+  .task:hover .delete {
     opacity: 1;
-}
+  }
+  
+  .task.done {
+    opacity: 0.7;
+  }
+  .task.done label {
+    text-decoration: line-through;
+  }
+  
+  .task-panel {
+    color: #0088ff;
+    margin-top: 8px;
+    font-size: 14px;
+    display: flex;
+  }
+  
+  .task-panel .task-counter {
+    flex-grow: 1;
+  }
+  
+  .task-panel span {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .task-panel span.active {
+    font-weight: bold;
+  }
